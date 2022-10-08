@@ -13,7 +13,7 @@ public class ArrayAnalysis {
 	//#1
 	public static int[][] createRandom(int row, int column, int min, int max){
 		
-		
+		int[][] nums = new int[row][column];
 		return null;
 	}
 	
@@ -21,8 +21,16 @@ public class ArrayAnalysis {
 	//#2
 	public static void printArray(int[][] arr)  {
 		
-		
-	
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				
+				System.out.print(arr[i][j] + " ");  //prints 1 row
+				
+			}
+			System.out.println();  //move cursor to next row
+		}
+
+		System.out.println();
 	}
 	
 	
